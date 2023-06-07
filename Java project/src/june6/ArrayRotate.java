@@ -1,5 +1,4 @@
 package june6;
-
 import java.util.Arrays;
 
 public class ArrayRotate {
@@ -19,3 +18,4 @@ public class ArrayRotate {
         System.out.println("Rotated Array: " + Arrays.toString(rotatedArray));
     }
 }
+
