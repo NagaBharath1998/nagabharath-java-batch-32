@@ -7,17 +7,16 @@ public class ArrayRotate {
         int[] arr = {1, 2, 3, 4, 5, 6, 7};
         int x = 2;
 
-        for (int i = 0; i < x; i++) {
-            int temp = arr[0];
-            for (int j = 0; j < arr.length - 1; j++) {
-                arr[j] = arr[j + 1];
-            }
-            arr[arr.length - 1] = temp;
+        System.out.println("Original Array: " + Arrays.toString(arr));
+
+        int n = arr.length;
+        int[] rotatedArray = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            int newIndex = (i + n - x) % n;
+            rotatedArray[newIndex] = arr[i];
         }
 
-        for (int num : arr) {
-            System.out.print(num + " ");
-        }
-        System.out.println();
+        System.out.println("Rotated Array: " + Arrays.toString(rotatedArray));
     }
 }
