@@ -16,7 +16,6 @@ public class ArrayRotate {
             int newIndex = (i + n - x) % n;
             rotatedArray[newIndex] = arr[i];
         }
-
         System.out.println("Rotated Array: " + Arrays.toString(rotatedArray));
     }
 }
