@@ -20,3 +20,4 @@ public class Question1 extends Thread {
         thread.start();
     }
 }
+
