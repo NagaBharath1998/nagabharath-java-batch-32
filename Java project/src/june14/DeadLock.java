@@ -8,7 +8,6 @@ public class DeadLock {
         Thread thread1 = new Thread(() -> {
             synchronized (lock1) {
                 System.out.println("Thread 1 acquired lock1");
-
                 try {
                     Thread.sleep(100);
                 } catch (InterruptedException e) {

@@ -8,7 +8,6 @@ public class ArraySumMultithreaded {
     private static int[] array = new int[ARRAY_SIZE];
     private static int[] partialSums = new int[NUM_THREADS];
     private static int finalSum = 0;
-
     public static void main(String[] args) throws InterruptedException {
 
         for (int i = 0; i < ARRAY_SIZE; i++) {

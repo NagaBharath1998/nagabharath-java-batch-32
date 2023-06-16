@@ -25,7 +25,6 @@ public class TicketBooking {
             }
         }
     }
-
     static class TicketBuyer implements Runnable {
         @Override
         public void run() {
