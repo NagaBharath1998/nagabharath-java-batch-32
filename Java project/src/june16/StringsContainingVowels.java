@@ -16,7 +16,7 @@ public class StringsContainingVowels {
     }
 
     public static int countVowels(String string) {
-        string = string.toLowerCase();  // Convert to lowercase for easier vowel comparison
+        string = string.toLowerCase();
         int count = 0;
         for (int i = 0; i < string.length(); i++) {
             char ch = string.charAt(i);
