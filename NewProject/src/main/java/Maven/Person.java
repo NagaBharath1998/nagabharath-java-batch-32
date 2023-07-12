@@ -1,7 +1,7 @@
 package Maven;
 
 public class Person {
-    private Address address;
+    private Maven.Address address;
     private Account account;
 
     public Address getAddress() {
